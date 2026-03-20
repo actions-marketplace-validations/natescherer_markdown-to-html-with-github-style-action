@@ -36,7 +36,7 @@ jobs:
           releaseVersion: ${{ steps.gitversion.outputs.SemVer }}
       - name: Update README Inputs/Outputs
         uses: natescherer/update-action-readme@feature/handle-no-outputs
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v7
         with:
           name: artifact
           path: ${{ github.workspace }}
